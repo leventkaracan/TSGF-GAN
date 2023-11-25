@@ -1,15 +1,17 @@
-# Multi-image transformer for multi-focus image fusion (MiT-MFIF)
+# Trainable self-guided filter for multi-focus image fusion (TSGF-GAN)
+
+![TSGF_GA](https://github.com/leventkaracan/TSGF-GAN/assets/2334419/0999507c-323a-4a7d-89b9-eb07578ef8b3)
 
 ## Introduction
 
-MiT-MFIF, an  multi-focus image fusion model, fuses input images with varying depths of field into a comprehensive all-in-focus image. It introduces MiT, a novel vision transformer architecture, ensuring both local and  global connectivity. Remarkably, MiT-MFIF achieves MFIF without additional post-processing steps, streamlining the fusion process and boosting efficiency. Our evaluations, qualitative and quantitative, affirm its superior performance over existing methods, predicting more accurate focus maps.
+TSGF-GAN proposes a new GAN-based multi-focus Image Fusion (MFIF) model leveraging a trainable guided filter module to improve fusion quality by predicting more accurate focus maps. The self-guided adaptive filtering enhances predicted focus maps and succeeds in superior multi-focus fusion results. The proposed approach outperforms existing GAN-based MFIF methods and achieves highly competitive performance with state-of-the-art methods. 
 
 For a comprehensive understanding and deeper insights, we invite you to explore the [paper](https://www.sciencedirect.com/science/article/pii/S0923596523001406).
 
 
 ## Installation
 
-MiT-MFIF is coded with PyTorch.
+TSGF-GAN is coded with PyTorch.
 
 It requires the following installations:
 
@@ -41,7 +43,7 @@ You may find the test data under the datasets folder. Please refer to the relate
 ```Zhang, H., Le, Z., Shao, Z., Xu, H., & Ma, J. (2021). MFF-GAN: An unsupervised generative adversarial network with adaptive and gradient joint constraints for multi-focus image fusion. Information Fusion, 66, 40-53.```
 
  
-## Training MiT-MFIF
+## Training TSGF-GAN
 
 You can train MiT-MFIF using the following script. 
 
@@ -49,13 +51,13 @@ You can train MiT-MFIF using the following script.
 
 ## Testing MiT-MFIF
 
-You can test MiT-MFIF using the following script. You can reach the pre-trained model under the "model" directory.
+You can test TSGF-GAN using the following script. You can reach the pre-trained model under the "model" directory.
 
-`python test.py --root_testdata  ./datasets --test_dataset LytroDataset --root_result ./results  --root_model ./models/ --model_name mit-mfif_best`
+`python test.py --root_testdata  ./datasets --test_dataset LytroDataset --root_result ./results  --root_model ./models/ --model_name tsgf-gan_best`
 
 ## Evaluation
 
-To evaluate the MiT-MFIF, we utilize the following Matlab implementations.
+To evaluate the TSGF-GAN, we utilize the following Matlab implementations.
 
  [https://github.com/zhengliu6699/imageFusionMetrics](https://github.com/zhengliu6699/imageFusionMetrics)
  
@@ -64,7 +66,7 @@ To evaluate the MiT-MFIF, we utilize the following Matlab implementations.
 
 ## Implementation Notes
 
-In our code, some code pieces are adapted from the [STTN](https://github.com/researchmm/STTN), [LocalViT](https://github.com/ofsoundof/LocalViT), and [pix2pixHD](https://github.com/NVIDIA/pix2pixHD).
+In our code, some code pieces are adapted from the [pix2pixHD](https://github.com/NVIDIA/pix2pixHD).
 
 ## Results
 
@@ -74,18 +76,11 @@ We have included the results for three datasets (Lytro, MFFW, MFI-WHU) in the "r
 
 Feel free to reach out to [me](mailto:leventkaracan87@gmail.com) with any questions regarding MiT-MFIF or to explore collaboration opportunities in solving diverse computer vision and image processing challenges. For additional details about my research please visit [my personal webpage](https://leventkaracan.github.io/).
 
-## Citing MiT-MFIF
+## Citing TSGF-GAN
 
 ```
-@article{karacan2023mitmfif,
-title = {Multi-image transformer for multi-focus image fusion},
-journal = {Signal Processing: Image Communication},
-volume = {119},
-pages = {117058},
-year = {2023},
-issn = {0923-5965},
-doi = {https://doi.org/10.1016/j.image.2023.117058},
-author = {Levent Karacan}
+@article{karacan2023tsgf,
+
 }
 ```
 
