@@ -6,7 +6,7 @@
 
 TSGF-GAN proposes a new GAN-based multi-focus Image Fusion (MFIF) model leveraging a trainable guided filter module to improve fusion quality by predicting more accurate focus maps. The self-guided adaptive filtering enhances predicted focus maps and succeeds in superior multi-focus fusion results. The proposed approach outperforms existing GAN-based MFIF methods and achieves highly competitive performance with state-of-the-art methods. 
 
-For a comprehensive understanding and deeper insights, we invite you to explore the [paper](https://www.sciencedirect.com/science/article/pii/S0923596523001406).
+For a comprehensive understanding and deeper insights, we invite you to explore the [paper](https://ieeexplore.ieee.org/abstract/document/10325460).
 
 
 ## Installation
@@ -49,7 +49,7 @@ You can train MiT-MFIF using the following script.
 
 `python main.py --root_traindata  ./mfif_dataset/  --model_save_dir ./models/  --model_name mfif`
 
-## Testing MiT-MFIF
+## Testing TSGF-GAN
 
 You can test TSGF-GAN using the following script. You can reach the pre-trained model under the "model" directory.
 
@@ -79,8 +79,14 @@ Feel free to reach out to [me](mailto:leventkaracan87@gmail.com) with any questi
 ## Citing TSGF-GAN
 
 ```
-@article{karacan2023tsgf,
-
-}
+@ARTICLE{karacan2023tsgfgan,
+  author={Karacan, Levent},
+  journal={IEEE Access}, 
+  title={Trainable Self-Guided Filter for Multi-Focus Image Fusion}, 
+  year={2023},
+  volume={11},
+  number={},
+  pages={139466-139477},
+  doi={10.1109/ACCESS.2023.3335307}}
 ```
 
