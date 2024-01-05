@@ -72,6 +72,8 @@ In our code, some code pieces are adapted from the [pix2pixHD](https://github.co
 
 We have included the results for three datasets (Lytro, MFFW, MFI-WHU) in the "results" folder.
 
+![TSGF-GAN Comparison](https://github.com/leventkaracan/TSGF-GAN/assets/2334419/8a1ab6f2-980a-42df-a487-34fd4e9b59a4)
+
 ## Contact
 
 Feel free to reach out to [me](mailto:leventkaracan87@gmail.com) with any questions regarding MiT-MFIF or to explore collaboration opportunities in solving diverse computer vision and image processing challenges. For additional details about my research please visit [my personal webpage](https://leventkaracan.github.io/).
