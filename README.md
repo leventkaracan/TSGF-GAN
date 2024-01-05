@@ -1,6 +1,7 @@
 # Trainable self-guided filter for multi-focus image fusion (TSGF-GAN)
 
 ![TSGF-GAN](https://github.com/leventkaracan/TSGF-GAN/assets/2334419/0999507c-323a-4a7d-89b9-eb07578ef8b3)
+[TSGF-MFIF_Arhcitecture_Rev.pdf](https://github.com/leventkaracan/TSGF-GAN/files/13841275/TSGF-MFIF_Arhcitecture_Rev.pdf)
 
 ## Introduction
 
